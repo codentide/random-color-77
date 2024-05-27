@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Color Flipper</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<span>
+				<h1 class="header__title">Color Flipper</h1>
+				<small class="header__owner">marcodelboccio.dev</small>
+			</span>
+
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="#simple-flip">Simple</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#hex-flip">Hex</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="hero" id="simple">
+				<h2 class="hero__title">
+					Color code: <span id="color-code">code</span>
+				</h2>
+
+				<button class="hero__btn" id="simple-flip">Flip!</button>
+				<button class="hero__btn" id="hex-flip">Hex Flip!</button>
+			</section>
+		</main>
+
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>
