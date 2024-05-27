@@ -45,3 +45,24 @@ window.addEventListener("DOMContentLoaded", () => {
 		window.location.hash = defaultHash;
 	}
 });
+
+// Agregar evento de clic al botón
+colorCode.addEventListener("click", (e) => {
+	// Crear un elemento de texto temporal
+	const tempElement = document.createElement("textarea");
+	tempElement.value = e.target.textContent; // Establecer el texto a copiar como el contenido del span
+	document.body.appendChild(tempElement); // Agregar el elemento al cuerpo del documento
+
+	// Seleccionar todo el texto en el elemento temporal
+	tempElement.select();
+	tempElement.setSelectionRange(0, 99999); // Para dispositivos móviles
+
+	// Copiar el texto al portapapeles
+	document.execCommand("copy");
+
+	// Eliminar el elemento temporal
+	document.body.removeChild(tempElement);
+
+	// Notificar al usuario que el texto se ha copiado
+	alert("¡Código de color copiado!");
+});

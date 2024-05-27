@@ -105,6 +105,7 @@ main {
 
 #color-code {
     color: rgb(241, 225, 109);
+    cursor: pointer;
 }
 
 .hero__btn {
