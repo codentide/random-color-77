@@ -6,33 +6,42 @@
 		<title>Random Color 77</title>
 
 		<link rel="stylesheet" href="style.css" />
+
+		<link
+			href="https://dev.iconly.io/public/byM1osB2jhpA/iconly.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<header class="header">
-			<span>
+			<div class="header__title-box">
 				<h1 class="header__title">Random Color 77</h1>
 				<small class="header__owner">marcodelboccio.dev</small>
-			</span>
+			</div>
 
 			<nav class="header__nav">
-				<ul class="nav__list">
+				<!-- <ul class="nav__list">
 					<li class="nav__item">
 						<a class="nav__link" href="#simple-flip">Simple</a>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#hex-flip">Hex</a>
 					</li>
-				</ul>
+				</ul> -->
 			</nav>
 		</header>
 		<main>
 			<section class="hero" id="simple">
-				<h2 class="hero__title">
-					Color: <span id="color-code">code</span>
-				</h2>
-
-				<button class="hero__btn" id="simple-flip">Flip!</button>
-				<button class="hero__btn" id="hex-flip">Hex Flip!</button>
+				<div class="hero__title">
+					<h2 id="color-code">code</h2>
+					<button id="copy-btn">
+						<i class="icon-copy"></i><span>Copy</span>
+					</button>
+				</div>
+				<div class="hero__button-box">
+					<button class="hero__btn" id="simple-flip">Flip!</button>
+					<button class="hero__btn" id="hex-flip">Hex!</button>
+				</div>
 			</section>
 		</main>
 

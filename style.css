@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: "Inter", monospace;
 }
 
 html,
@@ -11,6 +13,8 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: gainsboro;
+
+
 }
 
 body {
@@ -24,20 +28,26 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 1rem 8%;
+    padding: .4rem 10%;
 
     width: 100%;
-
+    height: 4rem;
     background-color: #232323;
 }
 
+.header__title-box {
+    display: flex;
+    flex-direction: column;
+}
+
 .header__title {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: gainsboro;
 }
 
 .header__owner {
-    color: gainsboro;
+    font-size: .8rem;
+    color: hsl(0, 0%, 84%);
 }
 
 .header__nav {}
@@ -93,6 +103,8 @@ main {
 }
 
 .hero__title {
+    position: relative;
+
     padding: 1.2rem 1.2rem;
     border-radius: .4rem;
 
@@ -103,13 +115,59 @@ main {
     color: ghostwhite;
 }
 
+#copy-btn {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+    padding: .3rem;
+    border-radius: .2rem;
+
+    font-size: .8rem;
+
+    color: gainsboro;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+#copy-btn span {
+    font-size: .7rem;
+    font-family: monospace;
+}
+
+#copy-btn i {
+    display: grid;
+    place-items: center;
+    padding-top: 0rem;
+    font-size: 1rem;
+}
+
+#copy-btn:hover {
+
+    background-color: hsl(0, 0%, 24%);
+}
+
 #color-code {
     color: rgb(241, 225, 109);
     cursor: pointer;
 }
 
+.hero__button-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .hero__btn {
-    display: none;
+    /* display: none; */
+
+    width: 100%;
 
     padding: .8rem 2.4rem;
     border-radius: .4rem;
@@ -126,8 +184,6 @@ main {
     filter: brightness(0.95);
 }
 
-
-
-:target {
+/* :target {
     display: block;
-}
+} */
